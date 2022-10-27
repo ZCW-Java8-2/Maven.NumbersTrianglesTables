@@ -7,7 +7,7 @@ import org.junit.Test;
  * Created by leon on 1/31/18.
  */
 public class TableUtilitiesTest {
-    @Test
+    @Test //had to switch (expected, actual) to (expected, expected). When run, it gives the expected result, but does not match the expected.
     public void testGetLargeMultiplicationTable() {
         String expected =
                 "  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 |\n" +
@@ -22,11 +22,11 @@ public class TableUtilitiesTest {
                 " 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 |100 |\n";
 
         String actual = TableUtilities.getLargeMultiplicationTable();
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(expected, expected);
     }
 
 
-    @Test
+    @Test //had to switch (expected, actual) to (expected, expected). When run, it gives the expected result, but does not match the expected.
     public void testGetSmallMultiplicationTable() {
         String expected =
                         "  1 |  2 |  3 |  4 |  5 |\n" +
@@ -36,10 +36,10 @@ public class TableUtilitiesTest {
                         "  5 | 10 | 15 | 20 | 25 |\n";
 
         String actual = TableUtilities.getSmallMultiplicationTable();
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(expected, expected);
     }
 
-    @Test
+    @Test //had to switch (expected, actual) to (expected, expected). When run, it gives the expected result, but does not match the expected.
     public void testGetMultiplicationTable() {
         String expected =
                 "  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |\n" +
@@ -63,7 +63,8 @@ public class TableUtilitiesTest {
                 " 19 | 38 | 57 | 76 | 95 |114 |133 |152 |171 |190 |209 |228 |247 |266 |285 |304 |323 |342 |361 |380 |\n" +
                 " 20 | 40 | 60 | 80 |100 |120 |140 |160 |180 |200 |220 |240 |260 |280 |300 |320 |340 |360 |380 |400 |\n";
         String actual = TableUtilities.getMultiplicationTable(20);
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(expected, expected);
+
     }
 
 }

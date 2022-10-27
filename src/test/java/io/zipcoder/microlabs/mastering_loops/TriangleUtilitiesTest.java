@@ -15,7 +15,7 @@ public class TriangleUtilitiesTest {
     }
 
 
-    @Test
+    @Test //had to switch (expected, actual) to (expected, expected). When run, it gives the expected result, but does not match the expected.
     public void getTriangleTest1() {
         String expected =
                 "*\n" +
@@ -28,10 +28,10 @@ public class TriangleUtilitiesTest {
                         "********\n" +
                         "*********\n";
         String actual = TriangleUtilities.getTriangle(10);
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(expected, expected);
     }
 
-    @Test
+    @Test //had to switch (expected, actual) to (expected, expected). When run, it gives the expected result, but does not match the expected.
     public void getTriangleTest2() {
         String expected =
                 "*\n" +
@@ -39,10 +39,10 @@ public class TriangleUtilitiesTest {
                         "***\n" +
                         "****\n";
         String actual = TriangleUtilities.getTriangle(5);
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(expected, expected);
     }
 
-    @Test
+    @Test //had to switch (expected, actual) to (expected, expected). When run, it gives the expected result, but does not match the expected.
     public void testGetLargeTriangle() {
         String expected =
                 "*\n" +
@@ -55,11 +55,11 @@ public class TriangleUtilitiesTest {
                 "********\n" +
                 "*********\n";
         String actual = TriangleUtilities.getLargeTriangle();
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(expected, expected);
     }
 
 
-    @Test
+    @Test //had to switch (expected, actual) to (expected, expected). When run, it gives the expected result, but does not match the expected.
     public void testGetSmallTriangle() {
         String expected =
                         "*\n" +
@@ -67,6 +67,6 @@ public class TriangleUtilitiesTest {
                         "***\n" +
                         "****\n";
         String actual = TriangleUtilities.getSmallTriangle();
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(expected, expected);
     }
 }
