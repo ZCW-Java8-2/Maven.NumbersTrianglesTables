@@ -22,7 +22,7 @@ public class TableUtilitiesTest {
                 " 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 |100 |\n";
 
         String actual = TableUtilities.getLargeMultiplicationTable();
-        Assert.assertEquals(expected, expected);
+        Assert.assertEquals(expected, actual);
     }
 
 
@@ -36,7 +36,7 @@ public class TableUtilitiesTest {
                         "  5 | 10 | 15 | 20 | 25 |\n";
 
         String actual = TableUtilities.getSmallMultiplicationTable();
-        Assert.assertEquals(expected, expected);
+        Assert.assertEquals(expected, actual);
     }
 
     @Test //had to switch (expected, actual) to (expected, expected). When run, it gives the expected result, but does not match the expected.
@@ -63,7 +63,7 @@ public class TableUtilitiesTest {
                 " 19 | 38 | 57 | 76 | 95 |114 |133 |152 |171 |190 |209 |228 |247 |266 |285 |304 |323 |342 |361 |380 |\n" +
                 " 20 | 40 | 60 | 80 |100 |120 |140 |160 |180 |200 |220 |240 |260 |280 |300 |320 |340 |360 |380 |400 |\n";
         String actual = TableUtilities.getMultiplicationTable(20);
-        Assert.assertEquals(expected, expected);
+        Assert.assertEquals(expected, actual);
 
     }
 

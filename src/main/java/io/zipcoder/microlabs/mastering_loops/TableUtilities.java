@@ -5,10 +5,9 @@ public class TableUtilities {
         String result = "";
         for (int i = 1; i <= 5; i++) {
             for (int j = 1; j <= 5; j++) {
-                System.out.print(String.format("%3d", (i*j)));
-                System.out.print(" |");
+                result += String.format("%3s |", String.valueOf(i*j));
             }
-            System.out.println();
+            result += "\n";
         }
         return result;
     }
@@ -17,24 +16,22 @@ public class TableUtilities {
         String result = "";
         for (int i = 1; i <= 10; i++) {
             for (int j = 1; j <= 10; j++) {
-                System.out.print(String.format("%3d",(i*j)));
-                System.out.print(" |");
+                result += String.format("%3s |", String.valueOf(i*j));
             }
-            System.out.println();
+            result += "\n";
         }
         return result;
     }
 
     public static String getMultiplicationTable(int tableSize) {
         int size = tableSize;
+        String result = "";
             for(int i = 1; i <= size; i++) {
-                System.out.print("\" ");
                 for (int j = 1; j <= size; j++) {
-                    System.out.print(String.format("%3d",(j*i)));
-                    System.out.print(" |");
+                    result += String.format("%3s |", String.valueOf(i*j));
                 }
-                System.out.println();
+                result += "\n";
             }
-        return null;
+        return result;
     }
 }

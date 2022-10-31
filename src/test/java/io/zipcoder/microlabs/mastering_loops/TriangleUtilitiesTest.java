@@ -28,7 +28,7 @@ public class TriangleUtilitiesTest {
                         "********\n" +
                         "*********\n";
         String actual = TriangleUtilities.getTriangle(10);
-        Assert.assertEquals(expected, expected);
+        Assert.assertEquals(expected, actual);
     }
 
     @Test //had to switch (expected, actual) to (expected, expected). When run, it gives the expected result, but does not match the expected.
@@ -39,7 +39,7 @@ public class TriangleUtilitiesTest {
                         "***\n" +
                         "****\n";
         String actual = TriangleUtilities.getTriangle(5);
-        Assert.assertEquals(expected, expected);
+        Assert.assertEquals(expected, actual);
     }
 
     @Test //had to switch (expected, actual) to (expected, expected). When run, it gives the expected result, but does not match the expected.
@@ -55,7 +55,7 @@ public class TriangleUtilitiesTest {
                 "********\n" +
                 "*********\n";
         String actual = TriangleUtilities.getLargeTriangle();
-        Assert.assertEquals(expected, expected);
+        Assert.assertEquals(expected, actual);
     }
 
 
@@ -67,6 +67,6 @@ public class TriangleUtilitiesTest {
                         "***\n" +
                         "****\n";
         String actual = TriangleUtilities.getSmallTriangle();
-        Assert.assertEquals(expected, expected);
+        Assert.assertEquals(expected, actual);
     }
 }

@@ -6,10 +6,10 @@ public class TriangleUtilities {
         String result = "";
         int row = numberOfRows;
         for (int i = 1; i < row; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print("*");
+            for (int j = 1; j <=i; j++) {
+                result += "*";
             }
-            System.out.println();
+            result += "\n";
         }
         return result;
     }
@@ -20,7 +20,7 @@ public class TriangleUtilities {
         int row = numberOfStars;
         int i = 1;
         while(i <= row) {
-            result+=("*");
+            result = ("*");
             i++;
         }
         return result;
@@ -30,9 +30,9 @@ public class TriangleUtilities {
         String result = "";
         for (int i = 1; i <= 4; i++) {
             for (int j = 1; j <= i; j++) {
-                System.out.print("*");
+                result += "*";
             }
-            System.out.println();
+            result += "\n";
         }
         return result;
     }
@@ -41,9 +41,9 @@ public class TriangleUtilities {
         String result = "";
         for (int i = 1; i < 10; i++) {
             for (int j = 1; j <= i; j++) {
-                System.out.print("*");
+                result += "*";
             }
-            System.out.println();
+            result += "\n";
         }
         return result;
     }
